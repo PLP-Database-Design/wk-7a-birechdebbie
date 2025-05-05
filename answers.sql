@@ -1,6 +1,14 @@
 
 question 1: 
 -- Transforming the ProductDetail table into 1NF
+
+CREATE TABLE ProductDetail_1NF (
+    OrderID INT,
+    CustomerName VARCHAR(100),
+    Products VARCHAR(100)
+);
+
+
 INSERT INTO ProductDetail_1NF (OrderID, CustomerName, Product)
 VALUES 
     (101, 'John Doe', 'Laptop'),
